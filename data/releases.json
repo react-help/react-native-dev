@@ -1,0 +1,2300 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-02T04:43:21.736Z",
+  "latest": "0.87",
+  "upcoming": {
+    "minor": "0.88",
+    "version": "0.88.0-rc.3",
+    "expected": "2026-10-12",
+    "source": "https://reactnative.dev/releases"
+  },
+  "minors": [
+    {
+      "minor": "0.87",
+      "latest": "0.87.1",
+      "firstReleased": "2026-08-11",
+      "latestReleased": "2026-08-26",
+      "react": {
+        "value": "^19.2.3",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.87.1/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "V1 default",
+        "engine": null,
+        "compiler": "250829098.0.17",
+        "source": "https://reactnative.dev/blog/2026/02/11/react-native-0.84#hermes-v1-as-default"
+      },
+      "support": {
+        "status": "active",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2026-08-11",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2026/08/11/react-native-0.87",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.87.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 37,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.87.2/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.4.1",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.87.2/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.87.1/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.87.2/template/android/build.gradle"
+        },
+        "node": {
+          "value": "^22.13.0 || ^24.3.0 || >= 26.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.87.1/package.json"
+        },
+        "nodeDocumented": {
+          "value": "22.11.0",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.87.2/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "26.0",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.87.1"
+    },
+    {
+      "minor": "0.86",
+      "latest": "0.86.3",
+      "firstReleased": "2026-06-09",
+      "latestReleased": "2026-08-24",
+      "react": {
+        "value": "^19.2.3",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.86.3/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "V1 default",
+        "engine": null,
+        "compiler": "250829098.0.17",
+        "source": "https://reactnative.dev/blog/2026/02/11/react-native-0.84#hermes-v1-as-default"
+      },
+      "support": {
+        "status": "active",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2026-06-09",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2026/06/11/react-native-0.86",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.86.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.86.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.3.1",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.86.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.86.3/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.86.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.86.3/package.json"
+        },
+        "nodeDocumented": {
+          "value": "22.11.0",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.86.3/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.86.3/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.86.3"
+    },
+    {
+      "minor": "0.85",
+      "latest": "0.85.3",
+      "firstReleased": "2026-04-07",
+      "latestReleased": "2026-05-05",
+      "react": {
+        "value": "^19.2.3",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.85.3/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "V1 default",
+        "engine": null,
+        "compiler": "250829098.0.10",
+        "source": "https://reactnative.dev/blog/2026/02/11/react-native-0.84#hermes-v1-as-default"
+      },
+      "support": {
+        "status": "end-of-cycle",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2026-04-07",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2026-08-11",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2026/04/07/react-native-0.85",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.85.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.85.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.3.1",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.85.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.85.3/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.85.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.85.3/package.json"
+        },
+        "nodeDocumented": {
+          "value": "22.11.0",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.85.3/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.85.3/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.85.3"
+    },
+    {
+      "minor": "0.84",
+      "latest": "0.84.1",
+      "firstReleased": "2026-02-11",
+      "latestReleased": "2026-02-27",
+      "react": {
+        "value": "^19.2.3",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.84.1/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "V1 default",
+        "engine": null,
+        "compiler": "250829098.0.9",
+        "source": "https://reactnative.dev/blog/2026/02/11/react-native-0.84#hermes-v1-as-default"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2026-02-11",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2026-06-09",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2026-08-11",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2026/02/11/react-native-0.84",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.84.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.84.1/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.84.1/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.84.1/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.84.1/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">= 20.19.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.84.1/package.json"
+        },
+        "nodeDocumented": {
+          "value": "22.11.0",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.84.1/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.84.1/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.84.1"
+    },
+    {
+      "minor": "0.83",
+      "latest": "0.83.10",
+      "firstReleased": "2025-12-10",
+      "latestReleased": "2026-06-25",
+      "react": {
+        "value": "^19.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.83.10/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": "0.14.1",
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-12-10",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2026-04-07",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2026-06-09",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/12/10/react-native-0.83",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.83.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.83.10/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.83.10/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.83.10/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.83.10/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">= 20.19.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.83.10/package.json"
+        },
+        "nodeDocumented": {
+          "value": "20.19.4",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.83.10/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.83.10/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.83.10"
+    },
+    {
+      "minor": "0.82",
+      "latest": "0.82.1",
+      "firstReleased": "2025-10-08",
+      "latestReleased": "2025-10-20",
+      "react": {
+        "value": "^19.1.1",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.82.1/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": "0.0.0",
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-10-08",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2026-02-11",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2026-04-07",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/10/08/react-native-0.82",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.82.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.82.1/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "9.0.0",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.82.1/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.82.1/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.82.1/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">= 20.19.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.82.1/package.json"
+        },
+        "nodeDocumented": {
+          "value": "20.19.4",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.82.1/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.82.1/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.82.1"
+    },
+    {
+      "minor": "0.81",
+      "latest": "0.81.6",
+      "firstReleased": "2025-08-12",
+      "latestReleased": "2026-02-05",
+      "react": {
+        "value": "^19.1.4",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.81.6/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-08-12",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-12-10",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2026-02-11",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/08/12/react-native-0.81",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.81.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.81.6/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.14.3",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.81.6/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.81.6/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.81.6/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">= 20.19.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.81.6/package.json"
+        },
+        "nodeDocumented": {
+          "value": "20.19.4",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 36,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.81.6/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "16.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.81.6/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.81.6"
+    },
+    {
+      "minor": "0.80",
+      "latest": "0.80.3",
+      "firstReleased": "2025-06-12",
+      "latestReleased": "2026-01-26",
+      "react": {
+        "value": "^19.1.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.80.3/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-06-12",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-10-08",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-12-10",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/06/12/react-native-0.80",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.80.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.80.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.14.1",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.80.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.80.3/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.80.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.80.3/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.80.3/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.80.3/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.80.3"
+    },
+    {
+      "minor": "0.79",
+      "latest": "0.79.7",
+      "firstReleased": "2025-04-08",
+      "latestReleased": "2025-10-21",
+      "react": {
+        "value": "^19.0.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.79.7/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-04-08",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-08-12",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-10-08",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/04/08/react-native-0.79",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.79.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.79.7/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.13",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.79.7/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.79.7/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.79.7/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.79.7/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.79.7/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.79.7/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.79.7"
+    },
+    {
+      "minor": "0.78",
+      "latest": "0.78.3",
+      "firstReleased": "2025-02-19",
+      "latestReleased": "2025-07-09",
+      "react": {
+        "value": "^19.0.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.78.3/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-02-19",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-06-12",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-08-12",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/02/19/react-native-0.78",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.78.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.78.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.12",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.78.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.78.3/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.78.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.78.3/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.78.3/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.78.3/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.78.3"
+    },
+    {
+      "minor": "0.77",
+      "latest": "0.77.3",
+      "firstReleased": "2025-01-21",
+      "latestReleased": "2025-07-21",
+      "react": {
+        "value": "^18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.77.3/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2025-01-21",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-04-08",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-06-12",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": "https://reactnative.dev/blog/2025/01/21/version-0.77",
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.77.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.77.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.10.2",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.77.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.77.3/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.77.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.77.3/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.77.3/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.77.3/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.77.3"
+    },
+    {
+      "minor": "0.76",
+      "latest": "0.76.9",
+      "firstReleased": "2024-10-23",
+      "latestReleased": "2025-04-03",
+      "react": {
+        "value": "^18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.76.9/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2024-10-23",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-02-19",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-04-08",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.76.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 35,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.76.9/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.10.2",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.76.9/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.76.9/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 24,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.76.9/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.76.9/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.76.9/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.76.9/scripts/cocoapods/helpers.rb"
+        }
+      },
+      "toolchainFrom": "0.76.9"
+    },
+    {
+      "minor": "0.75",
+      "latest": "0.75.5",
+      "firstReleased": "2024-08-14",
+      "latestReleased": "2025-02-06",
+      "react": {
+        "value": "^18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.75.5/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2024-08-14",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2025-01-21",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-02-19",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.75.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.75.7/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.8",
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.75.7/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "13.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.75.5/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 23,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.75.7/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.75.5/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/@react-native-community/template@0.75.7/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.75.5"
+    },
+    {
+      "minor": "0.74",
+      "latest": "0.74.7",
+      "firstReleased": "2024-04-22",
+      "latestReleased": "2025-01-27",
+      "react": {
+        "value": "18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2024-04-22",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2024-10-23",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2025-01-21",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.74.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.6",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "13.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 23,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.74.7/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.74.7"
+    },
+    {
+      "minor": "0.73",
+      "latest": "0.73.11",
+      "firstReleased": "2023-12-06",
+      "latestReleased": "2024-11-12",
+      "react": {
+        "value": "18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2023-12-06",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2024-08-14",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2024-10-23",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.73.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "13.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "17",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=18",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/package.json"
+        },
+        "nodeDocumented": {
+          "value": "18",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 34,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.73.11/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.73.11"
+    },
+    {
+      "minor": "0.72",
+      "latest": "0.72.17",
+      "firstReleased": "2023-06-21",
+      "latestReleased": "2024-08-19",
+      "react": {
+        "value": "18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2023-06-21",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2024-04-22",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2024-08-14",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.72.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 33,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "8.0.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "12.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "11",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=16",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/package.json"
+        },
+        "nodeDocumented": {
+          "value": "16",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 33,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.72.17/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.72.17"
+    },
+    {
+      "minor": "0.71",
+      "latest": "0.71.19",
+      "firstReleased": "2023-01-12",
+      "latestReleased": "2024-04-29",
+      "react": {
+        "value": "18.2.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2023-01-12",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2023-12-06",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2024-04-22",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.71.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 33,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "7.5.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "12.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/scripts/cocoapods/helpers.rb"
+        },
+        "jdk": {
+          "value": "11",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=14",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/package.json"
+        },
+        "nodeDocumented": {
+          "value": "16",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        },
+        "targetSdk": {
+          "value": 33,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.71.19/template/android/build.gradle"
+        },
+        "xcode": {
+          "value": "15.1",
+          "source": "https://github.com/reactwg/react-native-releases/blob/main/docs/support.md#external-dependencies-supported"
+        }
+      },
+      "toolchainFrom": "0.71.19"
+    },
+    {
+      "minor": "0.70",
+      "latest": "0.70.15",
+      "firstReleased": "2022-09-05",
+      "latestReleased": "2024-01-16",
+      "react": {
+        "value": "18.1.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/package.json"
+      },
+      "hermes": {
+        "default": true,
+        "label": "Default",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2022/09/05/version-070#hermes-as-default-engine"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2022-09-05",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2023-06-21",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2023-12-06",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.70.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "7.5.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "12.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/scripts/cocoapods/helpers.rb"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=14",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/package.json"
+        },
+        "targetSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.70.15/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.70.15"
+    },
+    {
+      "minor": "0.69",
+      "latest": "0.69.12",
+      "firstReleased": "2022-06-22",
+      "latestReleased": "2023-07-04",
+      "react": {
+        "value": "18.0.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.11.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2022-06-22",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2023-01-12",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2023-06-21",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.69.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "7.3.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "12.4",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/scripts/react_native_pods.rb"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=14",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/package.json"
+        },
+        "targetSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.69.12/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.69.12"
+    },
+    {
+      "minor": "0.68",
+      "latest": "0.68.7",
+      "firstReleased": "2022-03-30",
+      "latestReleased": "2023-04-26",
+      "react": {
+        "value": "17.0.2",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.11.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2022-03-30",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2022-09-05",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2023-01-12",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.68.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "7.3.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "11.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=14",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/package.json"
+        },
+        "targetSdk": {
+          "value": 31,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.68.7/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.68.7"
+    },
+    {
+      "minor": "0.67",
+      "latest": "0.67.5",
+      "firstReleased": "2022-01-18",
+      "latestReleased": "2022-11-06",
+      "react": {
+        "value": "17.0.2",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.9.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2022-01-18",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2022-06-22",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2022-09-05",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.67.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "7.2",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "11.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=12",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/package.json"
+        },
+        "targetSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.67.5/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.67.5"
+    },
+    {
+      "minor": "0.66",
+      "latest": "0.66.5",
+      "firstReleased": "2021-10-01",
+      "latestReleased": "2022-11-06",
+      "react": {
+        "value": "17.0.2",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.9.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2021-10-01",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2022-03-30",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2022-06-22",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.66.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "6.9",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "11.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=12",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/package.json"
+        },
+        "targetSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.66.5/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.66.5"
+    },
+    {
+      "minor": "0.65",
+      "latest": "0.65.3",
+      "firstReleased": "2021-08-17",
+      "latestReleased": "2022-11-06",
+      "react": {
+        "value": "17.0.2",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.8.1",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2021-08-17",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2022-01-18",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2022-03-30",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.65.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "6.9",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "11.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=12",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/package.json"
+        },
+        "targetSdk": {
+          "value": 30,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.65.3/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.65.3"
+    },
+    {
+      "minor": "0.64",
+      "latest": "0.64.4",
+      "firstReleased": "2021-03-12",
+      "latestReleased": "2022-11-07",
+      "react": {
+        "value": "17.0.1",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.7.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2021-03-12",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2021-10-01",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2022-01-18",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.64.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 29,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "6.7",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "10.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 21,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=12",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/package.json"
+        },
+        "targetSdk": {
+          "value": 29,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.64.4/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.64.4"
+    },
+    {
+      "minor": "0.63",
+      "latest": "0.63.5",
+      "firstReleased": "2020-07-08",
+      "latestReleased": "2022-11-07",
+      "react": {
+        "value": "16.13.1",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.5.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2020-07-08",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2021-08-17",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2021-10-01",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.63.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 29,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "6.2",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "10.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 16,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=10",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/package.json"
+        },
+        "targetSdk": {
+          "value": 29,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.63.5/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.63.5"
+    },
+    {
+      "minor": "0.62",
+      "latest": "0.62.3",
+      "firstReleased": "2020-03-26",
+      "latestReleased": "2021-05-05",
+      "react": {
+        "value": "16.11.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "~0.4.0",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2020-03-26",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2021-03-12",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2021-08-17",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.62.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "6.0.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "10.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 16,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=8.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/package.json"
+        },
+        "targetSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.62.3/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.62.3"
+    },
+    {
+      "minor": "0.61",
+      "latest": "0.61.5",
+      "firstReleased": "2019-09-24",
+      "latestReleased": "2019-11-23",
+      "react": {
+        "value": "16.9.0",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": "^0.2.1",
+        "compiler": null,
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/package.json"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2019-09-24",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2020-07-08",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2021-03-12",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.61.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "5.5",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "9.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 16,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=8.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/package.json"
+        },
+        "targetSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.61.5/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.61.5"
+    },
+    {
+      "minor": "0.60",
+      "latest": "0.60.6",
+      "firstReleased": "2019-07-03",
+      "latestReleased": "2019-09-24",
+      "react": {
+        "value": "16.8.6",
+        "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/package.json"
+      },
+      "hermes": {
+        "default": false,
+        "label": "Opt-in",
+        "engine": null,
+        "compiler": null,
+        "source": "https://reactnative.dev/blog/2019/07/17/hermes"
+      },
+      "support": {
+        "status": "unsupported",
+        "source": "https://reactnative.dev/releases",
+        "history": [
+          {
+            "status": "active",
+            "since": "2019-07-03",
+            "estimated": true
+          },
+          {
+            "status": "end-of-cycle",
+            "since": "2020-03-26",
+            "estimated": true
+          },
+          {
+            "status": "unsupported",
+            "since": "2020-07-08",
+            "estimated": true
+          }
+        ]
+      },
+      "blog": null,
+      "releaseNotes": "https://github.com/react/react-native/releases/tag/v0.60.0",
+      "toolchain": {
+        "compileSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/template/android/build.gradle"
+        },
+        "gradle": {
+          "value": "5.4.1",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/template/android/gradle/wrapper/gradle-wrapper.properties"
+        },
+        "ios": {
+          "value": "9.0",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/template/ios/Podfile"
+        },
+        "minSdk": {
+          "value": 16,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/template/android/build.gradle"
+        },
+        "node": {
+          "value": ">=8.3",
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/package.json"
+        },
+        "targetSdk": {
+          "value": 28,
+          "source": "https://cdn.jsdelivr.net/npm/react-native@0.60.6/template/android/build.gradle"
+        }
+      },
+      "toolchainFrom": "0.60.6"
+    }
+  ],
+  "expo": [
+    {
+      "sdk": 58,
+      "latest": "58.0.2",
+      "released": "2026-09-29",
+      "reactNative": "0.88.0-rc.3",
+      "minor": "0.88",
+      "prerelease": true,
+      "source": "https://cdn.jsdelivr.net/npm/expo@58.0.2/bundledNativeModules.json",
+      "releaseNotes": null
+    },
+    {
+      "sdk": 57,
+      "latest": "57.0.26",
+      "released": "2026-06-30",
+      "reactNative": "0.86.3",
+      "minor": "0.86",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@57.0.26/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/sdk-57"
+    },
+    {
+      "sdk": 56,
+      "latest": "56.0.23",
+      "released": "2026-05-20",
+      "reactNative": "0.85.3",
+      "minor": "0.85",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@56.0.23/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/sdk-56"
+    },
+    {
+      "sdk": 55,
+      "latest": "55.0.31",
+      "released": "2026-02-25",
+      "reactNative": "0.83.10",
+      "minor": "0.83",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@55.0.31/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/sdk-55"
+    },
+    {
+      "sdk": 54,
+      "latest": "54.0.37",
+      "released": "2025-09-10",
+      "reactNative": "0.81.5",
+      "minor": "0.81",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@54.0.37/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/sdk-54"
+    },
+    {
+      "sdk": 53,
+      "latest": "53.0.27",
+      "released": "2025-04-28",
+      "reactNative": "0.79.6",
+      "minor": "0.79",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@53.0.27/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/sdk-53"
+    },
+    {
+      "sdk": 52,
+      "latest": "52.0.49",
+      "released": "2024-11-10",
+      "reactNative": "0.76.9",
+      "minor": "0.76",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@52.0.49/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/2024/11-12-sdk-52"
+    },
+    {
+      "sdk": 51,
+      "latest": "51.0.39",
+      "released": "2024-05-06",
+      "reactNative": "0.74.5",
+      "minor": "0.74",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@51.0.39/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/2024/05-07-sdk-51"
+    },
+    {
+      "sdk": 50,
+      "latest": "50.0.21",
+      "released": "2024-01-18",
+      "reactNative": "0.73.6",
+      "minor": "0.73",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@50.0.21/bundledNativeModules.json",
+      "releaseNotes": "https://expo.dev/changelog/2024/01-18-sdk-50"
+    },
+    {
+      "sdk": 49,
+      "latest": "49.0.23",
+      "released": "2023-07-05",
+      "reactNative": "0.72.10",
+      "minor": "0.72",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@49.0.23/bundledNativeModules.json",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-49-c6d398cdf740"
+    },
+    {
+      "sdk": 48,
+      "latest": "48.0.21",
+      "released": "2023-02-14",
+      "reactNative": "0.71.14",
+      "minor": "0.71",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@48.0.21/bundledNativeModules.json",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-48-ccb8302e231"
+    },
+    {
+      "sdk": 47,
+      "latest": "47.0.14",
+      "released": "2022-11-03",
+      "reactNative": "0.70.8",
+      "minor": "0.70",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@47.0.14/bundledNativeModules.json",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-47-a0f6f5c038af"
+    },
+    {
+      "sdk": 46,
+      "latest": "46.0.21",
+      "released": "2022-07-25",
+      "reactNative": "0.69.9",
+      "minor": "0.69",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@46.0.21/bundledNativeModules.json",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-46-c2a1655f63f7"
+    },
+    {
+      "sdk": 45,
+      "latest": "45.0.8",
+      "released": "2022-05-05",
+      "reactNative": "0.68.2",
+      "minor": "0.68",
+      "prerelease": false,
+      "source": "https://cdn.jsdelivr.net/npm/expo@45.0.8/bundledNativeModules.json",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-45-f4e332954a68"
+    },
+    {
+      "sdk": 44,
+      "latest": "44.0.6",
+      "released": "2021-12-16",
+      "reactNative": "0.64.3",
+      "minor": "0.64",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.44.0.0",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-44-4c4b8306584a"
+    },
+    {
+      "sdk": 43,
+      "latest": "43.0.5",
+      "released": "2021-10-21",
+      "reactNative": "0.64.3",
+      "minor": "0.64",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.43.0.0",
+      "releaseNotes": "https://blog.expo.dev/expo-sdk-43-aa9b3c7d5541"
+    },
+    {
+      "sdk": 42,
+      "latest": "42.0.5",
+      "released": "2021-07-01",
+      "reactNative": "0.63.4",
+      "minor": "0.63",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.42.0.0",
+      "releaseNotes": "https://blog.expo.io/expo-sdk-42-579aee2348b6"
+    },
+    {
+      "sdk": 41,
+      "latest": "41.0.1",
+      "released": "2021-04-14",
+      "reactNative": "0.63.4",
+      "minor": "0.63",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.41.0.0",
+      "releaseNotes": "https://blog.expo.io/expo-sdk-41-12cc5232f2ef"
+    },
+    {
+      "sdk": 40,
+      "latest": "40.0.1",
+      "released": "2020-12-09",
+      "reactNative": "0.63.4",
+      "minor": "0.63",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.40.0.0",
+      "releaseNotes": "https://blog.expo.io/expo-sdk-40-is-now-available-d4d73e67da33"
+    },
+    {
+      "sdk": 39,
+      "latest": "39.0.5",
+      "released": "2020-08-18",
+      "reactNative": "0.63.3",
+      "minor": "0.63",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.39.0.0",
+      "releaseNotes": "https://dev.to/expo/expo-sdk-39-is-now-available-1lm8"
+    },
+    {
+      "sdk": 38,
+      "latest": "38.0.11",
+      "released": "2020-06-04",
+      "reactNative": "0.62.2",
+      "minor": "0.62",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.38.0.0",
+      "releaseNotes": "https://dev.to/expo/expo-sdk-38-is-now-available-5aa0"
+    },
+    {
+      "sdk": 37,
+      "latest": "37.0.12",
+      "released": "2020-03-03",
+      "reactNative": "0.61.4",
+      "minor": "0.61",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.37.0.0",
+      "releaseNotes": "https://dev.to/expo/expo-sdk-37-is-now-available-69g"
+    },
+    {
+      "sdk": 36,
+      "latest": "36.0.2",
+      "released": "2019-12-09",
+      "reactNative": "0.61.4",
+      "minor": "0.61",
+      "prerelease": false,
+      "source": "https://api.expo.dev/v2/versions#sdkVersions.36.0.0",
+      "releaseNotes": "https://blog.expo.io/expo-sdk-36-is-now-available-b91897b437fe"
+    }
+  ]
+}
