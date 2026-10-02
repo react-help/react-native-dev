@@ -14,7 +14,8 @@
     "typecheck": "tsc --noEmit",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "brand": "node scripts/brand.ts"
   },
   "dependencies": {
     "astro": "^7.3.5",
