@@ -1,0 +1,49 @@
+---
+import type { StoreDeadline } from '../lib/types.ts';
+import { countdownText, daysUntil } from '../lib/countdown.ts';
+
+interface Props {
+  deadlines: StoreDeadline[];
+}
+const { deadlines } = Astro.props;
+
+// Rendered at build time; the client script re-computes against today's date on load.
+// Upcoming first (soonest first), then those already in effect (most recent first).
+const sorted = [...deadlines].sort((a, b) => {
+  const da = daysUntil(a.date);
+  const db = daysUntil(b.date);
+  if (da >= 0 && db >= 0) return da - db;
+  if (da >= 0) return -1;
+  if (db >= 0) return 1;
+  return db - da;
+});
+---
+
+<div class="deadlines">
+  {
+    sorted.map((d) => {
+      const days = daysUntil(d.date);
+      return (
+        <article class="deadline px-box" data-deadline={d.date}>
+          <header>
+            <span class={`sprite ${days >= 0 ? 'sprite--hourglass' : 'sprite--flag'}`} aria-hidden="true" />
+            <span class="store">{d.store}</span>
+          </header>
+          <h3>{d.title}</h3>
+          <p class={`countdown pixel ${days < 0 ? 'past' : ''}`} data-countdown>
+            {countdownText(days)}
+          </p>
+          <p>
+            <time datetime={d.date}>{d.date}</time>. {d.detail}{' '}
+            <a href={d.source}>Source</a>
+            {d.verified === false && (
+              <span class="unv" title="Not verified against the source">
+                ?<span class="sr-only"> (unverified)</span>
+              </span>
+            )}
+          </p>
+        </article>
+      );
+    })
+  }
+</div>

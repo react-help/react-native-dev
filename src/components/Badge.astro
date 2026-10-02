@@ -1,0 +1,13 @@
+---
+import { statusLabel, type Row } from '../lib/merge.ts';
+
+interface Props {
+  row: Pick<Row, 'status' | 'current' | 'statusSource'>;
+}
+const { row } = Astro.props;
+const variant = row.current && row.status === 'active' ? 'current' : row.status;
+---
+
+<a class={`badge badge--${variant}`} href={row.statusSource} title="Support status per the React Native release crew">
+  {statusLabel(row)}
+</a>

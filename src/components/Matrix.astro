@@ -1,0 +1,163 @@
+---
+import Cell from './Cell.astro';
+import Badge from './Badge.astro';
+import { answerFor, expoLabel, formatNode, formatReact, type Row } from '../lib/merge.ts';
+
+interface Props {
+  rows: Row[];
+}
+const { rows } = Astro.props;
+
+// Default view: every supported minor plus the last six EOL ones.
+const EOL_VISIBLE = 6;
+let eolSeen = 0;
+const visible: Row[] = [];
+const older: Row[] = [];
+for (const row of rows) {
+  if (row.status !== 'unsupported') visible.push(row);
+  else if (eolSeen++ < EOL_VISIBLE) visible.push(row);
+  else older.push(row);
+}
+
+const nodeFloor = (range: string) => range.match(/(\d+(?:\.\d+)*)/)?.[1] ?? '';
+const nodeMismatch = (row: Row) =>
+  row.node && row.nodeDocumented && nodeFloor(row.node.value) !== row.nodeDocumented.value;
+
+const groups = [
+  { key: 'visible', rows: visible },
+  { key: 'older', rows: older },
+];
+---
+
+<div class="table-scroll" role="region" aria-labelledby="matrix-title" tabindex="0">
+  <table class="matrix" id="matrix" data-filter="all">
+    <caption class="sr-only">
+      React Native versions, newest first, with matching Expo SDK, React, Hermes and toolchain minimums. Each value links to its source.
+    </caption>
+    <thead>
+      <tr class="groups">
+        <td class="rn" aria-hidden="true"></td>
+        <td colspan="5" aria-hidden="true"></td>
+        <th colspan="2" scope="colgroup" class="grouped">iOS</th>
+        <th colspan="3" scope="colgroup" class="grouped">Android SDK</th>
+        <th colspan="3" scope="colgroup" class="grouped">Build toolchain</th>
+        <td colspan="3" aria-hidden="true"></td>
+      </tr>
+      <tr>
+        <th scope="col" class="rn">React Native</th>
+        <th scope="col">Released</th>
+        <th scope="col">Status</th>
+        <th scope="col">React</th>
+        <th scope="col">Expo</th>
+        <th scope="col">Hermes</th>
+        <th scope="col">Xcode ≥</th>
+        <th scope="col">iOS ≥</th>
+        <th scope="col" class="num"><abbr title="minSdkVersion">min</abbr></th>
+        <th scope="col" class="num"><abbr title="compileSdkVersion">compile</abbr></th>
+        <th scope="col" class="num"><abbr title="targetSdkVersion">target</abbr></th>
+        <th scope="col">Node</th>
+        <th scope="col" class="num">JDK</th>
+        <th scope="col">Gradle</th>
+        <th scope="col">Upgrade</th>
+        <th scope="col">Release notes</th>
+        <th scope="col">Breaking change</th>
+      </tr>
+    </thead>
+    {
+      groups.map((group) => (
+        <tbody class={group.key} id={group.key === 'older' ? 'older-rows' : undefined}>
+          {group.rows.map((row) => (
+            <tr
+              id={`v${row.minor}`}
+              data-minor={row.minor}
+              data-status={row.status}
+              data-expo={row.expo.length ? '1' : '0'}
+              data-answer={answerFor(row)}
+            >
+              <th scope="row" class="rn">
+                <a href={`#v${row.minor}`} title={`Link to React Native ${row.minor}`}>{row.latest}</a>
+              </th>
+              <td>
+                <time datetime={row.released} title={`${row.latest} published ${row.latestReleased}`}>{row.released}</time>
+              </td>
+              <td><Badge row={row} /></td>
+              <td><Cell cell={row.react} display={row.react ? formatReact(row.react.value) : undefined} label="React (peer dependency)" /></td>
+              <td>
+                {row.expo.length ? (
+                  <a
+                    class="v"
+                    href={row.expo.at(-1)!.releaseNotes ?? row.expo.at(-1)!.source}
+                    title={row.expo.map((e) => `SDK ${e.sdk}: react-native ${e.reactNative}, released ${e.released}`).join('\n')}
+                  >
+                    {expoLabel(row)}
+                  </a>
+                ) : (
+                  <span class="none" title="No Expo SDK targets this version">—<span class="sr-only">none</span></span>
+                )}
+              </td>
+              <td>
+                <Cell cell={{ value: row.hermes.label, source: row.hermes.source }} label="Hermes" />
+                {row.hermes.engine && <span class="sub">hermes-engine {row.hermes.engine}</span>}
+              </td>
+              <td><Cell cell={row.xcode} label="Minimum Xcode" /></td>
+              <td><Cell cell={row.ios} label="Minimum iOS deployment target" /></td>
+              <td class="num"><Cell cell={row.minSdk} label="minSdkVersion" /></td>
+              <td class="num"><Cell cell={row.compileSdk} label="compileSdkVersion" /></td>
+              <td class="num"><Cell cell={row.targetSdk} label="targetSdkVersion" /></td>
+              <td>
+                <Cell cell={row.node} display={row.node ? formatNode(row.node.value) : undefined} label={`Node (engines: ${row.node?.value ?? 'n/a'})`} />
+                {nodeMismatch(row) && (
+                  <a
+                    class="flag"
+                    href={row.nodeDocumented!.source}
+                    title={`The release crew's support table lists Node ${row.nodeDocumented!.value} as the minimum; package.json engines says ${row.node!.value}`}
+                  >
+                    ◆<span class="sr-only"> support table says Node {row.nodeDocumented!.value}</span>
+                  </a>
+                )}
+              </td>
+              <td class="num"><Cell cell={row.jdk} label="JDK" /></td>
+              <td><Cell cell={row.gradle} label="Gradle (template wrapper)" /></td>
+              <td>
+                {row.upgradeHelper ? (
+                  <a href={row.upgradeHelper} aria-label={`Upgrade helper diff to ${row.latest}`}>diff</a>
+                ) : (
+                  <span class="none">—</span>
+                )}
+              </td>
+              <td>
+                {row.blog ? (
+                  <a href={row.blog} aria-label={`Release blog post for ${row.minor}`}>blog</a>
+                ) : (
+                  <a href={row.releaseNotes} aria-label={`GitHub release notes for ${row.minor}.0`}>GitHub</a>
+                )}
+              </td>
+              <td class="note">{row.note ? <a class="v" href={row.note.source}>{row.note.value}</a> : <span class="none">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      ))
+    }
+  </table>
+</div>
+{
+  older.length > 0 && (
+    <button
+      type="button"
+      class="older-toggle no-js-hidden"
+      id="older-toggle"
+      aria-controls="older-rows"
+      aria-expanded="false"
+      data-label-closed={`Show ${older.length} older versions (${older.at(-1)!.minor}–${older[0]!.minor})`}
+      data-label-open="Hide older versions"
+    >
+      Show {older.length} older versions ({older.at(-1)!.minor}–{older[0]!.minor})
+    </button>
+  )
+}
+<ul class="legend">
+  <li><span class="unv" aria-hidden="true">?</span> unverified value (see the source)</li>
+  <li><span class="flag" aria-hidden="true">◆</span> the release crew's docs list a different Node minimum</li>
+  <li>Dotted values link to their source</li>
+  <li>Node = <code>engines</code> in the published package.json</li>
+</ul>

@@ -1,0 +1,38 @@
+---
+// One sourced value. Links to its source; unverified values get a visible "?" marker.
+import type { Cell } from '../lib/merge.ts';
+import type { Sourced } from '../lib/types.ts';
+
+interface Props {
+  cell: (Cell<string | number> | Sourced<string | number>) | null;
+  display?: string;
+  label: string;
+}
+const { cell, display, label } = Astro.props;
+const origin = cell && 'origin' in cell ? cell.origin : undefined;
+const from = cell && 'from' in cell ? cell.from : undefined;
+const title = cell
+  ? [
+      `${label}: source`,
+      origin === 'inherited' && from ? `(inherited from the ${from} entry in curated.yaml)` : '',
+      origin === 'curated' ? '(curated.yaml)' : '',
+    ]
+      .filter(Boolean)
+      .join(' ')
+  : '';
+---
+
+{
+  cell ? (
+    <>
+      <a class="v" href={cell.source} title={title} rel="noopener">{display ?? String(cell.value)}</a>
+      {cell.verified === false && (
+        <span class="unv" title="Not verified: the source doesn't state this value outright. Please PR a better source.">
+          ?<span class="sr-only"> (unverified)</span>
+        </span>
+      )}
+    </>
+  ) : (
+    <span class="none" title={`${label}: not available`}>—<span class="sr-only">not available</span></span>
+  )
+}

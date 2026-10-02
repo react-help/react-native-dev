@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+import { DOCS_URL, REPO_URL, SIBLING_URL, SITE_URL, TITLE, DESCRIPTION } from '../lib/site.ts';
+
+// Set in netlify.toml for production only, so local and preview builds never load analytics.
+const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN as string | undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{TITLE}</title>
+    <meta name="description" content={DESCRIPTION} />
+    <link rel="canonical" href={SITE_URL} />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#1b1812" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3e9cf" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title="React Native releases and support changes" href="/feed.xml" />
+    <link rel="alternate" type="application/json" title="Compatibility matrix (JSON)" href="/matrix.json" />
+    <link rel="preload" href="/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/silkscreen-400.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:title" content={TITLE} />
+    <meta property="og:description" content={DESCRIPTION} />
+    <meta property="og:image" content={`${SITE_URL}og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pixel chevron mark with the text React Native version matrix" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline>
+      document.documentElement.classList.add('js');
+      try {
+        if (localStorage.getItem('scanlines') === 'on') document.documentElement.dataset.scanlines = 'on';
+      } catch {}
+    </script>
+    {
+      beaconToken && (
+        <script
+          is:inline
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: beaconToken })}
+        />
+      )
+    }
+  </head>
+  <body>
+    <slot />
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Independent project, not affiliated with the React Foundation.</p>
+        <p><a href={DOCS_URL}>Official React Native documentation: reactnative.dev</a></p>
+        <p class="small">
+          <a href={REPO_URL}>Source on GitHub</a> (MIT){' · '}
+          <a href="/matrix.json">matrix.json</a>{' · '}
+          <a href="/feed.xml">RSS feed</a>{' · '}
+          Sibling: <a href={SIBLING_URL}>React release tracker (reactjs.dev)</a>{' · '}
+          No cookies, no ads.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

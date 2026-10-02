@@ -1,0 +1,216 @@
+---
+import { execFileSync } from 'node:child_process';
+import Base from '../layouts/Base.astro';
+import Matrix from '../components/Matrix.astro';
+import Deadlines from '../components/Deadlines.astro';
+import { loadMatrix, CURATED_PATH } from '../lib/load.ts';
+import { CURATED_EDIT_URL, DOCS_URL, REPO_URL, SIBLING_URL } from '../lib/site.ts';
+
+const matrix = loadMatrix();
+const rows = matrix.rows;
+const oldest = rows.at(-1)!.minor;
+const newest = rows[0]!.minor;
+
+// "Last updated" comes from the data files themselves: releases.json records when its content
+// last changed; curated.yaml's date is its last commit (falls back to nothing outside git).
+const releasesUpdated = matrix.generatedAt.slice(0, 10);
+let curatedUpdated: string | null = null;
+try {
+  curatedUpdated = execFileSync('git', ['log', '-1', '--format=%cs', '--', CURATED_PATH], { encoding: 'utf8' }).trim() || null;
+} catch {
+  curatedUpdated = null;
+}
+---
+
+<Base>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <span class="sprite sprite--mark" aria-hidden="true"></span>
+        <h1 class="pixel">react-native.dev</h1>
+        <button type="button" class="toggle no-js-hidden" id="scanlines" aria-pressed="false" title="Decorative CRT scanlines">
+          Scanlines: off
+        </button>
+      </div>
+      <p class="tagline">
+        React Native version compatibility matrix: which Expo SDK, React, Hermes, Xcode, Android SDK, Node and JDK go with
+        each release, and whether it's still supported. Refreshed from npm and the release crew's tables every 12 hours.
+      </p>
+      <div class="header-links">
+        <a class="docs-link px-box" href={DOCS_URL}>
+          <span>Official React Native documentation: reactnative.dev</span><span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <span class="sibling-link">Tracking React itself? <a href={SIBLING_URL}>reactjs.dev</a></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="lookup-title" class="lookup px-box">
+      <h2 id="lookup-title" class="sr-only">Look up a version</h2>
+      <form id="lookup" action="#" autocomplete="off">
+        <label for="rn-version" class="pixel">I'm on React Native</label>
+        <input
+          id="rn-version"
+          name="v"
+          inputmode="decimal"
+          placeholder={newest}
+          list="rn-minors"
+          aria-describedby="lookup-answer"
+          spellcheck="false"
+        />
+        <datalist id="rn-minors">
+          {rows.map((r) => <option value={r.minor} />)}
+        </datalist>
+        <button class="btn" type="submit">Look up</button>
+      </form>
+      <p id="lookup-answer" class="answer pixel" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="matrix-title">
+      <div class="matrix-head">
+        <h2 id="matrix-title" class="pixel">The matrix</h2>
+        <fieldset class="filters no-js-hidden" id="filters">
+          <legend>Show</legend>
+          <label class="chip"><input type="radio" name="filter" value="all" checked /><span>Default</span></label>
+          <label class="chip"><input type="radio" name="filter" value="supported" /><span>Supported only</span></label>
+          <label class="chip"><input type="radio" name="filter" value="expo" /><span>Has Expo SDK</span></label>
+        </fieldset>
+      </div>
+      <p class="lede">
+        One row per minor, newest first, {newest} back to {oldest}. Versions show their latest patch. Minimums are what each
+        release requires; newer tools usually work too.
+      </p>
+      <Matrix rows={rows} />
+    </section>
+
+    <section aria-labelledby="deadlines-title">
+      <h2 id="deadlines-title" class="pixel">Store deadlines</h2>
+      <p class="lede">The app stores set their own floors, independent of what React Native supports.</p>
+      <Deadlines deadlines={matrix.storeDeadlines} />
+    </section>
+
+    <section aria-label="Data freshness" class="meta px-box">
+      <p>Release data last changed: <time datetime={releasesUpdated}>{releasesUpdated}</time></p>
+      {curatedUpdated && <p>Curated data last edited: <time datetime={curatedUpdated}>{curatedUpdated}</time></p>}
+      <p>See something wrong? <a href={CURATED_EDIT_URL}>PR the YAML</a> with a source, or <a href={`${REPO_URL}/issues`}>open an issue</a>.</p>
+    </section>
+  </main>
+</Base>
+
+<script>
+  import { countdownText, daysUntil } from '../lib/countdown.ts';
+  import { parseMinorInput } from '../lib/versions.ts';
+
+  const table = document.getElementById('matrix') as HTMLTableElement;
+  const older = document.getElementById('older-rows');
+  const olderToggle = document.getElementById('older-toggle') as HTMLButtonElement | null;
+  const form = document.getElementById('lookup') as HTMLFormElement;
+  const input = document.getElementById('rn-version') as HTMLInputElement;
+  const answer = document.getElementById('lookup-answer') as HTMLElement;
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function setOlder(open: boolean) {
+    if (!older || !olderToggle) return;
+    older.classList.toggle('open', open);
+    olderToggle.setAttribute('aria-expanded', String(open));
+    olderToggle.textContent = open ? olderToggle.dataset.labelOpen! : olderToggle.dataset.labelClosed!;
+  }
+  olderToggle?.addEventListener('click', () => setOlder(!older?.classList.contains('open')));
+
+  // ---- lookup ----
+  const rows = [...table.querySelectorAll<HTMLTableRowElement>('tbody tr')];
+  const minors = rows.map((r) => r.dataset.minor!);
+
+  function lookup(raw: string, opts: { scroll?: boolean; updateHash?: boolean } = {}) {
+    const minor = parseMinorInput(raw);
+    rows.forEach((r) => r.classList.remove('hit'));
+    if (!minor) {
+      answer.innerHTML = '';
+      if (raw.trim()) {
+        const hint = document.createElement('span');
+        hint.className = 'hint';
+        hint.textContent = 'Type a version like 0.81 or 81.';
+        answer.append(hint);
+      }
+      return;
+    }
+    const row = rows.find((r) => r.dataset.minor === minor);
+    if (!row) {
+      answer.innerHTML = '';
+      const hint = document.createElement('span');
+      hint.className = 'hint';
+      hint.textContent = `No stable React Native ${minor} found. This table covers ${minors.at(-1)} to ${minors[0]}.`;
+      answer.append(hint);
+      return;
+    }
+    // Make sure the row is visible under the current filter.
+    if (older?.contains(row)) setOlder(true);
+    const filter = table.dataset.filter;
+    if ((filter === 'supported' && row.dataset.status === 'unsupported') || (filter === 'expo' && row.dataset.expo === '0')) {
+      setFilter('all');
+    }
+    row.classList.add('hit');
+    answer.textContent = row.dataset.answer!;
+    if (opts.scroll !== false) row.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+    if (opts.updateHash !== false) history.replaceState(null, '', `#v${minor}`);
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    lookup(input.value);
+  });
+
+  // Deep links: #v0.81 or ?v=0.81
+  const fromUrl = new URLSearchParams(location.search).get('v') ?? location.hash.match(/^#v(.+)$/)?.[1];
+  if (fromUrl) {
+    input.value = decodeURIComponent(fromUrl);
+    lookup(input.value, { updateHash: false });
+  }
+  window.addEventListener('hashchange', () => {
+    const v = location.hash.match(/^#v(.+)$/)?.[1];
+    if (v) {
+      input.value = v;
+      lookup(v, { updateHash: false });
+    }
+  });
+
+  // ---- filters ----
+  const filterInputs = [...document.querySelectorAll<HTMLInputElement>('#filters input[name="filter"]')];
+  function setFilter(value: string) {
+    table.dataset.filter = value;
+    filterInputs.forEach((i) => (i.checked = i.value === value));
+    if (olderToggle) olderToggle.hidden = value !== 'all';
+  }
+  filterInputs.forEach((i) => i.addEventListener('change', () => setFilter(i.value)));
+
+  // ---- countdowns: recompute against the visitor's date (the page itself is built at deploy time) ----
+  document.querySelectorAll<HTMLElement>('[data-deadline]').forEach((card) => {
+    const date = card.dataset.deadline!;
+    const days = daysUntil(date);
+    const el = card.querySelector<HTMLElement>('[data-countdown]');
+    if (el) {
+      el.textContent = countdownText(days);
+      el.classList.toggle('past', days < 0);
+    }
+  });
+
+  // ---- optional scanlines (off by default, remembered per browser) ----
+  const scan = document.getElementById('scanlines') as HTMLButtonElement;
+  const root = document.documentElement;
+  const syncScan = () => {
+    const on = root.dataset.scanlines === 'on';
+    scan.setAttribute('aria-pressed', String(on));
+    scan.textContent = `Scanlines: ${on ? 'on' : 'off'}`;
+  };
+  syncScan();
+  scan.addEventListener('click', () => {
+    const on = root.dataset.scanlines !== 'on';
+    if (on) root.dataset.scanlines = 'on';
+    else delete root.dataset.scanlines;
+    try {
+      localStorage.setItem('scanlines', on ? 'on' : 'off');
+    } catch {}
+    syncScan();
+  });
+</script>
