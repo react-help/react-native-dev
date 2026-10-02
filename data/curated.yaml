@@ -1,0 +1,121 @@
+# Hand-maintained data for react-native.dev. Corrections welcome: open a PR with a source URL.
+#
+# How this file combines with data/releases.json (generated from npm and the release crew's tables):
+#
+#   * Every value is `{ value, source }`; add `verified: false` when the source doesn't state it outright.
+#     Unverified values are shown on the site with a visible marker.
+#   * Entries are sparse. Toolchain fields (xcode, ios, minSdk, compileSdk, targetSdk, node, jdk, gradle)
+#     inherit from the nearest older entry. An inherited value only fills a gap where releases.json
+#     has nothing. A value set on an entry's *own* minor overrides releases.json, so this is the place for corrections.
+#   * `note` (one-line breaking change) and `upgrade_helper` are never inherited.
+#   * Keep entries sorted newest first.
+
+versions:
+  - minor: "0.87"
+    note:
+      value: "Strict TypeScript API is the default; deep imports are type errors. Node 22.13+ required"
+      source: https://reactnative.dev/blog/2026/08/11/react-native-0.87#breaking-changes-1
+
+  - minor: "0.86"
+    note:
+      value: "No user-facing breaking changes listed in the release post"
+      source: https://reactnative.dev/blog/2026/06/11/react-native-0.86#breaking-changes
+
+  - minor: "0.85"
+    note:
+      value: "Jest preset moved to @react-native/jest-preset; StyleSheet.absoluteFillObject removed"
+      source: https://reactnative.dev/blog/2026/04/07/react-native-0.85#jest-preset-moved-to-new-package
+
+  - minor: "0.84"
+    note:
+      value: "Hermes V1 is the default engine; Legacy Architecture compiled out on iOS; precompiled iOS core by default"
+      source: https://reactnative.dev/blog/2026/02/11/react-native-0.84#hermes-v1-as-default
+
+  - minor: "0.83"
+    note:
+      value: "No user-facing breaking changes listed in the release post"
+      source: https://reactnative.dev/blog/2025/12/10/react-native-0.83#breaking-changes
+
+  - minor: "0.82"
+    note:
+      value: "New Architecture only: newArchEnabled=false / RCT_NEW_ARCH_ENABLED=0 are ignored"
+      source: https://reactnative.dev/blog/2025/10/08/react-native-0.82#new-architecture-only
+
+  - minor: "0.81"
+    note:
+      value: "Node 20.19.4+ and Xcode 16.1+ required; built-in JSC removed; Android 16 targeted by default"
+      source: https://reactnative.dev/blog/2025/08/12/react-native-0.81#breaking-changes
+
+  - minor: "0.80"
+    note:
+      value: "\"exports\" field added to react-native; deep imports now warn; Legacy Architecture frozen"
+      source: https://reactnative.dev/blog/2025/06/12/react-native-0.80#added-exports-field-on-main-package
+
+  - minor: "0.79"
+    note:
+      value: "Remote JS Debugging via Chrome removed (react-native-debugger no longer works)"
+      source: https://reactnative.dev/blog/2025/04/08/react-native-0.79#removal-of-remote-js-debugging
+
+  - minor: "0.78"
+    note:
+      value: "Ships React 19: apps must migrate (e.g. propTypes removed)"
+      source: https://reactnative.dev/blog/2025/02/19/react-native-0.78#react-19
+
+  - minor: "0.77"
+    note:
+      value: "console.log streaming in Metro removed (use React Native DevTools); `react-native init` removed"
+      source: https://reactnative.dev/blog/2025/01/21/version-0.77#removal-of-consolelog-streaming-in-metro
+
+  - minor: "0.76"
+    note:
+      value: "New Architecture on by default; minimum iOS 15.1 and Android minSdk 24"
+      source: https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#react-native-new-architecture-by-default
+
+  # 0.71+ get JDK and Xcode from the release crew's support table (see README). These rows cover
+  # the older versions that table doesn't list. Sources are the archived "Setting up the development
+  # environment" docs as they were before the website removed them.
+
+  - minor: "0.67"
+    jdk:
+      value: "11"
+      source: https://github.com/react/react-native-website/blob/5f5876966f720d3c7cb652e911e26299951533ec/website/versioned_docs/version-0.67/_getting-started-macos-android.md#L28
+
+  - minor: "0.60"
+    jdk:
+      value: "8"
+      source: https://github.com/react/react-native-website/blob/5f5876966f720d3c7cb652e911e26299951533ec/website/versioned_docs/version-0.60/_getting-started-macos-android.md#L28
+    xcode:
+      # The docs for 0.60–0.70 only say "use the latest version of Xcode"; no minimum was published.
+      value: "latest"
+      source: https://github.com/react/react-native-website/blob/6abd743951194d7e69b821a839d47365d0943e14/website/versioned_docs/version-0.70/_getting-started-macos-ios.md#L49
+      verified: false
+
+# Store submission requirements. These drive the countdown block.
+store_deadlines:
+  - id: apple-xcode-26
+    store: App Store
+    title: "Built with Xcode 26 / iOS 26 SDK"
+    detail: "Apps uploaded to App Store Connect must be built with Xcode 26 or later using an SDK for iOS 26 or later."
+    date: "2026-04-28"
+    source: https://developer.apple.com/news/upcoming-requirements/
+
+  - id: play-target-36
+    store: Google Play
+    title: "New apps and updates target API 36"
+    detail: "New apps and app updates must target Android 16 (API level 36) or higher (Wear OS / Automotive / TV / XR have lower floors)."
+    date: "2026-08-31"
+    source: https://developer.android.com/google/play/requirements/target-sdk
+
+  - id: play-existing-35
+    store: Google Play
+    title: "Existing apps target API 35 to stay visible"
+    detail: "Existing apps must target Android 15 (API level 35) or higher to remain available to new users on newer Android versions."
+    date: "2026-08-31"
+    source: https://developer.android.com/google/play/requirements/target-sdk
+
+  - id: play-extension-36
+    store: Google Play
+    title: "Extension deadline for API 36"
+    detail: "Developers who requested more time must target API level 36 by this date."
+    date: "2026-11-01"
+    source: https://developer.android.com/google/play/requirements/target-sdk
