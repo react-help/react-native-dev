@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-12T21:16:29.203Z",
+  "generatedAt": "2026-10-13T06:47:33.009Z",
   "latest": "0.87",
   "upcoming": {
     "minor": "0.88",
-    "version": "0.88.0-rc.4",
+    "version": "0.88.0-rc.5",
     "expected": "2026-10-12",
     "source": "https://reactnative.dev/releases"
   },
