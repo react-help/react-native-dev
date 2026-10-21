@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-19T18:43:21.898Z",
+  "generatedAt": "2026-10-21T17:12:45.943Z",
   "latest": "0.88",
   "upcoming": {
     "minor": "0.89",
@@ -2147,32 +2147,32 @@
     },
     {
       "sdk": 57,
-      "latest": "57.0.30",
+      "latest": "57.0.31",
       "released": "2026-06-30",
       "reactNative": "0.86.3",
       "minor": "0.86",
       "prerelease": false,
-      "source": "https://cdn.jsdelivr.net/npm/expo@57.0.30/bundledNativeModules.json",
+      "source": "https://cdn.jsdelivr.net/npm/expo@57.0.31/bundledNativeModules.json",
       "releaseNotes": "https://expo.dev/changelog/sdk-57"
     },
     {
       "sdk": 56,
-      "latest": "56.0.23",
+      "latest": "56.0.24",
       "released": "2026-05-20",
       "reactNative": "0.85.3",
       "minor": "0.85",
       "prerelease": false,
-      "source": "https://cdn.jsdelivr.net/npm/expo@56.0.23/bundledNativeModules.json",
+      "source": "https://cdn.jsdelivr.net/npm/expo@56.0.24/bundledNativeModules.json",
       "releaseNotes": "https://expo.dev/changelog/sdk-56"
     },
     {
       "sdk": 55,
-      "latest": "55.0.31",
+      "latest": "55.0.32",
       "released": "2026-02-25",
       "reactNative": "0.83.10",
       "minor": "0.83",
       "prerelease": false,
-      "source": "https://cdn.jsdelivr.net/npm/expo@55.0.31/bundledNativeModules.json",
+      "source": "https://cdn.jsdelivr.net/npm/expo@55.0.32/bundledNativeModules.json",
       "releaseNotes": "https://expo.dev/changelog/sdk-55"
     },
     {
