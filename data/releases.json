@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-04T19:45:15.945Z",
+  "generatedAt": "2026-11-05T19:57:06.014Z",
   "latest": "0.88",
   "upcoming": {
     "minor": "0.89",
@@ -2155,12 +2155,12 @@
     },
     {
       "sdk": 57,
-      "latest": "57.0.31",
+      "latest": "57.0.32",
       "released": "2026-06-30",
       "reactNative": "0.86.3",
       "minor": "0.86",
       "prerelease": false,
-      "source": "https://cdn.jsdelivr.net/npm/expo@57.0.31/bundledNativeModules.json",
+      "source": "https://cdn.jsdelivr.net/npm/expo@57.0.32/bundledNativeModules.json",
       "releaseNotes": "https://expo.dev/changelog/sdk-57"
     },
     {
